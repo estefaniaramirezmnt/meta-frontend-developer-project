@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import bannerImg from "../images/restaurantfood.jpg";
 
 const Header = () => {
     return (
@@ -10,6 +11,9 @@ const Header = () => {
                     <h3>Chicago</h3>
                     <p>We are a family owned Mediterranean restaurant, focused on tradictional recipes served in a modern way.</p>
                     <Link to="/booking"><button aria-label="On Click">Reserve table</button></Link>
+                </div>
+                <div className="banner-img">
+                    <img src={bannerImg} alt="Restaurant food" />
                 </div>
 
             </section>
