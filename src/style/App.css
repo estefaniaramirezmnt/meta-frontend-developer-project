@@ -381,6 +381,11 @@ footer .brands li {
     justify-content: flex-start;
   }
 
+  .menu-items {
+    margin: auto;
+    width: 60%;
+  }
+
   /* footer */
   footer section {
     padding: 10px 8%;
@@ -390,23 +395,22 @@ footer .brands li {
   .company-info p {
     width: 100%;
   }
-}
 
-@media (max-width: 970px) {
-  .menu-items {
-    margin: auto;
-    width: 70%;
+  footer .brands li {
+    text-align: left;
+    margin: 0;
   }
 }
+
 @media (max-width: 700px) {
   .menu-items {
-    width: 80%;
+    width: 70%;
   }
 }
 
 @media (max-width: 600px) {
   .menu-items {
-    width: 90%;
+    width: 80%;
   }
 }
 
