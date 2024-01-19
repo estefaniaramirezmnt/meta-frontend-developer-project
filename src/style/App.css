@@ -1,0 +1,415 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
+nav {
+  z-index: 10001;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 13%;
+}
+
+.hamburguer-menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  background-color: black;
+  height: 3px;
+  margin: 5px 0;
+  width: 25px;
+}
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+.nav-links.visible {
+  align-items: center;
+  background-color: #495E57;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  top: 40px;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1em;
+}
+
+nav ul li a {
+  color: black;
+}
+
+nav ul li a:hover {
+  text-decoration: underline solid #495E57;
+
+}
+
+/* header section */
+
+.header {
+  background-color: #495e57;
+  color: white;
+  padding: 40px 10px;
+}
+
+.header section {
+  padding: 10px 13%;
+  position: relative;
+}
+
+h2 {
+  color: #F4CE14;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.banner p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 520px;
+}
+
+.header button,
+.menu-header button {
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 18px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.header button:hover,
+.menu-header button:hover {
+  opacity: 0.8;
+}
+
+.banner-img {
+  position: absolute;
+  right: 13%;
+  top: 15%;
+  width: 400px;
+}
+
+.banner-img img {
+  border-radius: 20px;
+  height: 400px;
+  width: 100%;
+}
+
+/* form for reservation */
+
+form,
+.comfirm {
+  padding: 10px 13%;
+}
+
+.formField {
+  padding: 50px 20px;
+}
+
+input,
+label {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#book-date,
+#book-time,
+#book-guests,
+#book-occasion {
+  background: #afc3bd;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  outline: none;
+  padding: 8px 24px;
+}
+
+.button-finish-reservation input {
+  background: #495e57;
+  border: none;
+  border-radius: 5px;padding: 12px 16px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.comfirm span {
+  color: rgb(56, 188, 56);
+}
+
+/* menu */
+
+.menu-container {
+  margin: 110px auto;
+  padding: 10px 13%;
+}
+
+.menu-container h2 {
+  color: #495E57
+}
+
+.menu-header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.menu-items {
+  background: #a9c8be;
+  border-radius: 8px;
+  width: 350px;
+}
+
+.menu-container img {
+  border-radius: 8px;
+  height: 233px;
+  width: 100%;
+}
+
+.menu-content {
+  padding: 5px 15px;
+}
+
+.menu-content .heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-button {
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding:10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.order-button:hover {
+  background-color: #495E57;
+  color: white;
+}
+
+/* Footer */
+
+footer section {
+  align-items: start;
+  background: #a9c8be;
+  color: #495E57;
+  display: flex;
+  font-weight: 500  ;
+  justify-content: space-between;
+  padding: 40px 13%;
+}
+
+.company-info img {
+  margin-top: 12px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.company-info p {
+  width: 320px;
+}
+
+footer h3 {
+  color: #495E57;
+  font-size: 18px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  padding: 3px 0px;
+}
+
+footer a {
+  color: #495E57;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Media queries */
+
+@media (max-width: 1300px) {
+
+  .header section {
+    padding: 10px 8%;
+  }
+
+  .banner-img {
+    right: 8%;
+    width: 380px;
+  }
+
+  .banner-img img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 1150px) {
+
+  .header section {
+    padding: 10px 6%;
+  }
+
+  .banner-img {
+    right: 6%;
+    width: 330px;
+  }
+
+  .banner-img img {
+    height: 330px;
+  }
+}
+
+@media (max-width: 970px) {
+
+  /* Navbar.js */
+
+  .navbar {
+    padding: 10px 5%;
+  }
+
+  .hamburguer-menu-icon {
+    display: block;
+  }
+
+  .bar {
+    background: #333333;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.visible {
+    background: #333333;
+    display: flex;
+    z-index: 1000;
+    padding: 20px 0;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  /* Header.js */
+
+  .header section {
+    padding: 10px 6%;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  form,
+  .comfirm {
+    padding: 10px 8%;
+  }
+
+  .header section,
+  .menu-container {
+    padding: 10px 8%;
+  }
+
+  /* menu */
+
+  .menu-container {
+    margin: 20px 0;
+  }
+
+  .menu-header {
+    justify-content: flex-start;
+  }
+
+  /* footer */
+  footer section {
+    padding: 10px 8%;
+    flex-direction: column;
+  }
+
+  .company-info p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 970px) {
+  .menu-items {
+    margin: auto;
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .menu-items {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-items {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-items {
+    width: 100%;
+  }
+}
+
+/* .hidden {
+  display: none;
+} */

@@ -1,13 +1,18 @@
 import React from "react";
-import "./App.css";
-import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Main from "./components/Main";
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
+
+import "./style/App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
-      <Header />
+      <Main />
+      <Menu />
+      <Footer />
     </div>
   );
 }
