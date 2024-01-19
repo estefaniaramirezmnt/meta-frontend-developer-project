@@ -238,7 +238,7 @@ label {
 /* Footer */
 
 footer section {
-  align-items: start;
+  align-items: flex-start;
   background: #a9c8be;
   color: #495E57;
   display: flex;
