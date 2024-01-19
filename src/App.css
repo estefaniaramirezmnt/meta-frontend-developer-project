@@ -13,9 +13,9 @@ a {
 
 /* Nabvar.js*/
 
-/* nav{
+nav {
   z-index: 10001;
-} */
+}
 
 .navbar {
   align-items: center;
@@ -32,8 +32,8 @@ a {
 .bar {
   background-color: black;
   height: 3px;
-  width: 25px;
   margin: 5px 0;
+  width: 25px;
 }
 
 .nav-links {
@@ -57,7 +57,7 @@ a {
 
 
 nav ul li {
-  /* display: inline-block; */
+  display: inline-block;
   padding: 1.3em;
 }
 
@@ -152,14 +152,26 @@ nav ul li a:hover {
   .header section {
     padding: 10px 6%;
   }
-  
+
   .banner-img {
-    width: 350px;
+    right: 6%;
+    width: 330px;
   }
 
   .banner-img img {
-    height: 350px;
+    height: 330px;
   }
+}
+
+@media (max-width: 950px) {
+  .header section {
+    padding: 10px 4%;
+  }
+
+  .banner-img {
+    right: 5%;
+  }
+
 }
 
 @media (max-width: 900px) {
@@ -185,7 +197,7 @@ nav ul li a:hover {
   .nav-links.visible {
     background: #333333;
     display: flex;
-    /* z-index: 1000; */
+    z-index: 1000;
     padding: 20px 0;
   }
 
@@ -194,6 +206,9 @@ nav ul li a:hover {
   }
 
   /* Header.js */
+  .header section {
+    padding: 10px 6%;
+  }
 
   .banner-img {
     display: none;
