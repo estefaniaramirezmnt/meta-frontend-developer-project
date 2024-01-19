@@ -32,8 +32,8 @@ const Footer = () => {
             </ul>
             </div>
             <div>
-                <h3>Social Media Links</h3>
-            <ul>
+                <h3>Social Media</h3>
+            <ul className="brands"> 
                 <li><a href="/"><FontAwesomeIcon icon={faFacebook} /></a></li>
                 <li><a href="/"><FontAwesomeIcon icon={faInstagram} /></a></li>
                 <li><a href="/"><FontAwesomeIcon icon={faXTwitter} /></a></li>
